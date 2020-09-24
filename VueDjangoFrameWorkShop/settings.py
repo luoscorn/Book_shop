@@ -201,7 +201,7 @@ JWT_AUTH = {
 REGEX_MOBILE = "^1[358]\d{9}$|^147\d{8}$|^176\d{8}$"
 
 # 云片网设置
-APIKEY = ''
+APIKEY = 'b64fb2c219126a36ec8e7911390589a4'
 
 # 缓存过期时间
 REST_FRAMEWORK_EXTENSIONS = {
@@ -238,19 +238,19 @@ SOCIAL_AUTH_QQ_SECRET = 'bazqux'
 SOCIAL_AUTH_WEIXIN_KEY = 'foobar'
 SOCIAL_AUTH_WEIXIN_SECRET = 'bazqux'
 
-# QINIU_ACCESS_KEY = 'h_r41Eu27LsUkO5lS99TLxWjwJg9CXA_Pz2dZ5k8'
-# QINIU_SECRET_KEY = 'xp2UcNU0AGMYhMHCkaZKdnJUqSuq1EPqPaNPuf7Q'
-# QINIU_BUCKET_NAME = ' vueshopstatic'
-QINIU_BUCKET_DOMAIN = 'vueshopstatic.mtianyan.cn'
-# QINIU_SECURE_URL = 0
-#
-# DEFAULT_FILE_STORAGE = 'qiniustorage.backends.QiniuMediaStorage'
-# STATICFILES_STORAGE = 'qiniustorage.backends.QiniuStaticStorage'
+QINIU_ACCESS_KEY = 'efbjSwdaLCi0bl2jrsNQwjbV6Qi6PGJlKyuKboCo'
+QINIU_SECRET_KEY = 'iucx3LOPcxq-U6wcMXVWsZ3XqrbyOcYC2dY-qEvA'
+QINIU_BUCKET_NAME = 'bookshopdjango'
+QINIU_BUCKET_DOMAIN = 'qh64o404q.hn-bkt.clouddn.com'
+QINIU_SECURE_URL = False
+# #
+DEFAULT_FILE_STORAGE = 'qiniustorage.backends.QiniuMediaStorage'
+STATICFILES_STORAGE = 'qiniustorage.backends.QiniuStaticStorage'
 
-# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+#MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_ROOT = os.path.join('/root/projects/VueDjangoFrameWorkShop/', 'media')
 MEDIA_URL = 'http://{0}/root/projects/VueDjangoFrameWorkShop/media/'.format(QINIU_BUCKET_DOMAIN)
-# STATIC_URL = urljoin('http://{0}'.format(QINIU_BUCKET_DOMAIN), '/static/')
+STATIC_URL = urljoin('http://{0}'.format(QINIU_BUCKET_DOMAIN), '/static/')
 STATIC_URL = '/static/'
 # # sentry设置
 # import os
