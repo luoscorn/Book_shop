@@ -120,12 +120,10 @@ DATABASES = {
         'USER': 'root',
         'PASSWORD': '123456',
         'HOST': 'localhost',
-        'PORT':'3306',
+        'PORT': '3306',
         "OPTIONS": {"init_command": "SET default_storage_engine=INNODB;"}
     }
 }
-
-
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
@@ -247,7 +245,7 @@ QINIU_SECURE_URL = False
 DEFAULT_FILE_STORAGE = 'qiniustorage.backends.QiniuMediaStorage'
 STATICFILES_STORAGE = 'qiniustorage.backends.QiniuStaticStorage'
 
-#MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_ROOT = os.path.join('/root/projects/VueDjangoFrameWorkShop/', 'media')
 MEDIA_URL = 'http://{0}/root/projects/VueDjangoFrameWorkShop/media/'.format(QINIU_BUCKET_DOMAIN)
 STATIC_URL = urljoin('http://{0}'.format(QINIU_BUCKET_DOMAIN), '/static/')
